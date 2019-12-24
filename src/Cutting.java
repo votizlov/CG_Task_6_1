@@ -40,7 +40,7 @@ public class Cutting {
         System.out.println(back);
         for (int i = 0; i < img.getHeight(); i++) {
             for (int j = 0; j < img.getWidth(); j++) {
-                if (!(abs(img.getRGB(j,i)-back)<1)){
+                if (!(abs(img.getRGB(j,i)-back)<10)){
                     if(i>maxY)
                         maxY=i;
                     else
